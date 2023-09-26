@@ -1,13 +1,9 @@
 .chart-container {
     .bar-chart-wrapper {
-      //display: table;
       position: relative;
-      //height: calc(var(--vh) - (var(--component-bottom-details-pane)));
-      //@include custom-component-height(calc(var(--component-bottom-details-pane) + 30px));
-      height: calc(var(--vh) - (var(--component-bottom-details-pane)));
+      height: 450px;
 
       .bar-chart-container {
-        //display: table-cell;
         width: 100%;
         height: 100%;
 
@@ -20,7 +16,6 @@
 
           .bar-chart-col {
             position: relative;
-            //vertical-align: bottom;
             display: inline-grid;
             height: 100%;
             padding: 0px 5px;
@@ -28,7 +23,6 @@
             .bar-chart-bar {
               position: relative;
               height: 0;
-              //margin: auto;
               grid-column: 1;
               grid-row: 1;
               align-self: end;
@@ -49,7 +43,7 @@
 
             .outer-bar {
               width: 56px;
-              background-color: $light-gray;
+              background-color: gray;
             }
 
             .inner-bar {
